@@ -6,6 +6,11 @@ const product = {
   screenType: 'LED',
 }
 
+const {price, refreshRate, screenType} = product;
+console.log(price);
+console.log(refreshRate);
+console.log(screenType);
+
 // Opdracht 2: Destructure type en brand uit onderstaand object, en log ze daarna in de terminal
 
 const productInformation = {
@@ -17,6 +22,9 @@ const productInformation = {
   screenQuality: 'Ultra HD/4K',
   smartTv: true,
 }
+
+const {type, brand} = productInformation.general;
+console.log(type, brand);
 
 // Opdracht 3: destructure wifi en bluetooth uit onderstaand object, en log ze daarna in de terminal
 
@@ -38,15 +46,22 @@ const tvOptions = {
   },
 };
 
+const {wifi, bluetooth} = tvOptions.options.connectivity.popular;
+console.log(wifi, bluetooth);
+
 // Opdracht 4: Destructure beide waardes uit onderstaande array, en log ze daarna in de terminal
 
 const connectivity = ['wifi', 'bluetooth'];
+
+const [one, two] = connectivity;
+console.log(one, two);
 
 
 // Opdracht 5: Destructure de >eerste< en >derde< waarde uit onderstaande array, en log ze daarna in de terminal
 
 const tvSizes = [41, 43, 46, 56, 65];
-
+const [wan,, thwrie] = tvSizes;
+console.log(wan, thwrie);
 
 // opdracht 6: Destructure name en adress uit de return value van deze functie en log ze daarna in de terminal
 
