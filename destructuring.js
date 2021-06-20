@@ -72,8 +72,14 @@ function getCompanyDetails() {
   }
 }
 
+const {name, adress} = getCompanyDetails();
+console.log(name, adress);
+
 // opdracht 7: Destructure beide zinnetjes uit de return value van de getDetails functie en log ze in de terminal. Let op: de functie verwacht argumenten bij het aanroepen!
 
 function getDetails(name, age) {
   return [`Your name is ${name}`, `You are ${age} years old`];
 }
+
+const [first, second] = getDetails("Savannah", 30);
+console.log(first, second);
